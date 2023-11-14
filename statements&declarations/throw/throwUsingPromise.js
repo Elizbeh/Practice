@@ -1,17 +1,17 @@
-function readFilePromise(path) {
+function readFilePromise(path){
   return new Promise((resolve, reject) => {
-    readFile(path, (err, data) => {
+    readFile(path, (err, data)=>{
       if (err) {
-        reject(err);
+        reject(err)
       }
-      resolve(data);
-    });
-  });
+      resolve(data)
+    })
+  })
 }
 
-try {
+try{
   const data = await readFilePromise("foo.txt");
   console.log(data);
-} catch (err) {
-  console.error(err);
+}catch (err) {
+ console.error(err); 
 }
