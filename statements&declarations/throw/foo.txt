@@ -1,0 +1,2 @@
+Throwing an existing object
+This example calls a callback-based async function, and throws an error if the callback receives an error.
